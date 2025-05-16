@@ -1,13 +1,16 @@
 #include <stdio.h>
 
-int strlen(const char *str) {
-int i = 0;
-    while (str[i] != '\0') {
-        i++;
-    }
+int meu_strlen(char *str) {
+    int i = 0;
+    while (str[i] != '\0') i++;
     return i;
 }
+
 int main() {
-    printf("o tamanho da string eh : %d\n", strlen("ana"));
+    char texto[100];
+    printf("digite uma string: ");
+    scanf("%s", texto);
+
+    printf("tamanho da string: %d\n", meu_strlen(texto));
     return 0;
 }
