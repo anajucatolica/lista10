@@ -10,9 +10,11 @@ void meu_strcpy(char *dest, char *src) {
 }
 
 int main() {
-    char origem[] = "copia";
-    char destino[50];
+    char origem[100], destino[100];
+    printf("digite a string de origem: ");
+    scanf("%s", origem);
+
     meu_strcpy(destino, origem);
-    printf("Destino: %s\n", destino);
+    printf("string copiada: %s\n", destino);
     return 0;
 }
