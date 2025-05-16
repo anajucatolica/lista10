@@ -10,9 +10,13 @@ void meu_strcat(char *dest, char *src) {
 }
 
 int main() {
-    char a[100] = "hello, ";
-    char b[] = "world";
-    meu_strcat(a, b);
-    printf("concatenado: %s\n", a);
+    char str1[200], str2[100];
+    printf("digite a primeira string: ");
+    scanf("%s", str1);
+    printf("digite a segunda string: ");
+    scanf("%s", str2);
+
+    meu_strcat(str1, str2);
+    printf("resultado da concatenação: %s\n", str1);
     return 0;
 }
